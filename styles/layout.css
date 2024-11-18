@@ -1,0 +1,36 @@
+#app {
+  display: grid;
+  grid-template-columns: 36% 64%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background: linear-gradient(
+      180deg,
+      rgba(33, 37, 38, 0.8) 0%,
+      rgba(33, 37, 38, 0.65) 20%,
+      rgba(33, 37, 38, 0.3) 40.5%,
+      rgba(33, 37, 38, 0.1) 100%
+    ),
+    url(../assets/Background.png) lightgray 50% / cover no-repeat;
+
+  padding: 2rem;
+  margin-top: 1.25rem;
+  margin-left: auto;
+
+  border-radius: 0.5rem;
+
+  & header {
+    h1 {
+      color: #ff598b;
+      font: var(--text-logo);
+      margin-top: 1rem;
+    }
+    
+    p {
+      /* margin-bottom: 1rem; */
+    }
+  }
+}
