@@ -1,36 +1,34 @@
 #app {
   display: grid;
-  grid-template-columns: 36% 64%;
-
+  grid-template-columns: 31.25% 68.75%;
+  gap: 1.25rem;
+  
   height: 100vh;
   overflow: hidden;
 }
 
 aside {
-  background: linear-gradient(
-      180deg,
-      rgba(33, 37, 38, 0.8) 0%,
-      rgba(33, 37, 38, 0.65) 20%,
-      rgba(33, 37, 38, 0.3) 40.5%,
-      rgba(33, 37, 38, 0.1) 100%
-    ),
-    url(../assets/Background.png) lightgray 50% / cover no-repeat;
-
   padding: 2rem;
-  margin-top: 1.25rem;
-  margin-left: auto;
+  border-radius: 0.75rem;
+  
+  background: linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%);
+  
+  & .aside-container {
+    max-width: 25rem;
+    margin-left: auto;
+  }
+  
+}
 
-  border-radius: 0.5rem;
+main {
+  padding: 5rem 8.125rem;
+  overflow: auto;
 
-  & header {
-    h1 {
-      color: #ff598b;
-      font: var(--text-logo);
-      margin-top: 1rem;
-    }
-    
-    p {
-      /* margin-bottom: 1rem; */
-    }
+  border-radius: 0.75rem;
+  background-color: var(--shape-body);
+
+  & .main-container {
+    max-width: 35rem;
+    margin-right: auto;
   }
 }
