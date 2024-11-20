@@ -32,8 +32,10 @@
           <h2>Crie seu convite</h2>
           <form action="">
             <fieldset>
-              <img src="assets/icons/calendar.svg" alt="" />
-              <strong>Sobre o evento</strong>
+              <div class="legend">
+                <img src="assets/icons/calendar.svg" alt="" />
+                <strong>Sobre o evento</strong>
+              </div>
 
               <div class="input-wrapper">
                 <label for="nameEvent">Título</label>
@@ -45,55 +47,50 @@
                 />
               </div>
 
-              <div class="input-wrapper">
-                <label for="start">Início</label>
-                <input
-                  id="start"
-                  name="start"
-                  type="datetime-local"
-                  placeholder="DD/MM/AAAA, --:--"
-                  lang="pt-BR"
-                />
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="start">Início</label>
+                  <input
+                    id="start"
+                    name="start"
+                    type="datetime"
+                    placeholder="DD/MM/AAAA, --:--"
+                    lang="pt-BR"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="end">Fim</label>
+                  <input
+                    id="end"
+                    name="end"
+                    type="datetime"
+                    placeholder="DD/MM/AAAA, --:--"
+                    lang="pt-BR"
+                  />
+                </div>
               </div>
 
-              <div class="input-wrapper">
-                <label for="end">Fim</label>
-                <input
-                  id="end"
-                  name="end"
-                  type="datetime-local"
-                  placeholder="DD/MM/AAAA, --:--"
-                  lang="pt-BR"
-                />
-              </div>
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="type">Tipo</label>
+                  <input
+                    id="type"
+                    name="type"
+                    type="text"
+                    placeholder="Presencial Online"
+                  />
+                </div>
 
-              <div class="flight-types">
-                <input
-                  type="radio"
-                  name="flight-type"
-                  value="inPerson"
-                  id="inPerson"
-                  checked
-                />
-                <label for="inPerson">Presencial</label>
-
-                <input
-                  type="radio"
-                  name="flight-type"
-                  value="online"
-                  id="online"
-                />
-                <label for="online"> Online </label>
-              </div>
-
-              <div class="input-wrapper">
-                <label for="location">Local</label>
-                <input
-                  id="location"
-                  name="location"
-                  type="url"
-                  placeholder="Link ou endereço"
-                />
+                <div class="input-wrapper">
+                  <label for="location">Local</label>
+                  <input
+                    id="location"
+                    name="location"
+                    type="url"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
               </div>
 
               <div class="textarea-wrapper">

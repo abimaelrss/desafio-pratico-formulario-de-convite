@@ -43,6 +43,10 @@ main {
 
   & .main-container {
     max-width: 35rem;
-    /* margin-right: auto; */
+    margin: auto;
+
+    & h2 {
+      color: var(--text-heading);
+    }
   }
 }
