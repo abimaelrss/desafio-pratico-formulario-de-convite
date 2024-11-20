@@ -32,6 +32,8 @@
   --text-heading-md: 700 1.75rem/1.5 var(--font-family-heading);
   --text-heading-sm: 700 1.125rem/1.5 var(--font-family-heading);
   --text-logo: 400 2.5rem var(--font-family-logo);
+
+  zoom: 60%;
 }
 
 body {
@@ -48,4 +50,8 @@ body {
 h1, h2 {
   font: var(--text-heading-md);
   color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
 }

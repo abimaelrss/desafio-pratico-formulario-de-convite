@@ -29,10 +29,83 @@
       </aside>
       <main>
         <div class="main-container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          enim cumque nam, ipsa ex id architecto vero ipsum eaque iusto esse
-          distinctio incidunt sequi atque excepturi beatae tempore asperiores
-          provident?
+          <h2>Crie seu convite</h2>
+          <form action="">
+            <fieldset>
+              <img src="assets/icons/calendar.svg" alt="" />
+              <strong>Sobre o evento</strong>
+
+              <div class="input-wrapper">
+                <label for="nameEvent">Título</label>
+                <input
+                  id="nameEvent"
+                  name="nameEvent"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="start">Início</label>
+                <input
+                  id="start"
+                  name="start"
+                  type="datetime-local"
+                  placeholder="DD/MM/AAAA, --:--"
+                  lang="pt-BR"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="end">Fim</label>
+                <input
+                  id="end"
+                  name="end"
+                  type="datetime-local"
+                  placeholder="DD/MM/AAAA, --:--"
+                  lang="pt-BR"
+                />
+              </div>
+
+              <div class="flight-types">
+                <input
+                  type="radio"
+                  name="flight-type"
+                  value="inPerson"
+                  id="inPerson"
+                  checked
+                />
+                <label for="inPerson">Presencial</label>
+
+                <input
+                  type="radio"
+                  name="flight-type"
+                  value="online"
+                  id="online"
+                />
+                <label for="online"> Online </label>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="location">Local</label>
+                <input
+                  id="location"
+                  name="location"
+                  type="url"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>
