@@ -29,3 +29,140 @@ fieldset {
 fieldset + fieldset {
   margin-top: 3.125rem;
 }
+
+.colors-section {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1.75rem;
+
+  /* flex-direction: column; */
+  & :nth-child(1) {
+    background: #59b2ff;
+  }
+
+  & :nth-child(2) {
+    background: #6a59ff;
+  }
+
+  & :nth-child(3) {
+    background: #b259ff;
+  }
+
+  & :nth-child(4) {
+    background: #ff59f9;
+  }
+  & :nth-child(5) {
+    background: #ff598b;
+  }
+
+  & :nth-child(6) {
+    background: #ff5959;
+  }
+
+  & :nth-child(7) {
+    background: #ff8b59;
+  }
+
+  & :nth-child(8) {
+    background: #ffcd59;
+  }
+
+  & :nth-child(9) {
+    background: #e1ff59;
+  }
+
+  & :nth-child(10) {
+    background: #59ff91;
+  }
+
+  & :nth-child(11) {
+    background: #59fff9;
+  }
+
+  & input {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border-radius: 50%;
+    border: 0.375rem solid var(--shape-button);
+  }
+}
+
+.theme-colors {
+  max-width: 25rem;
+}
+
+.theme {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+
+  max-width: 35rem;
+
+  margin-top: 1rem;
+
+  & .card-theme {
+    min-width: 8.375rem;
+
+    display: flex;
+    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    background: var(--shape-button);
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    /* &:focus {
+      outline: 2px solid var(--brand-light);
+      background-color: var(--shape-button);
+    } */
+
+    &.selected {
+      outline: 2px solid var(--brand-light);
+      background-color: var(--shape-button);
+    }
+  }
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  /* align-items: center; */
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  & .switch-toggle {
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+  }
+
+  & .input-file {
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

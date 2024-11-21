@@ -30,79 +30,213 @@
       <main>
         <div class="main-container">
           <h2>Crie seu convite</h2>
-          <form action="">
-            <fieldset>
-              <div class="legend">
-                <img src="assets/icons/calendar.svg" alt="" />
-                <strong>Sobre o evento</strong>
-              </div>
 
-              <div class="input-wrapper">
-                <label for="nameEvent">Título</label>
-                <input
-                  id="nameEvent"
-                  name="nameEvent"
-                  type="text"
-                  placeholder="Nome do evento"
-                />
-              </div>
-
-              <div class="flex">
-                <div class="input-wrapper">
-                  <label for="start">Início</label>
-                  <input
-                    id="start"
-                    name="start"
-                    type="datetime"
-                    placeholder="DD/MM/AAAA, --:--"
-                    lang="pt-BR"
-                  />
+          <section class="about-event">
+            <form action="">
+              <fieldset>
+                <div class="legend">
+                  <img src="assets/icons/calendar.svg" alt="" />
+                  <strong>Sobre o evento</strong>
                 </div>
 
                 <div class="input-wrapper">
-                  <label for="end">Fim</label>
+                  <label for="nameEvent">Título</label>
                   <input
-                    id="end"
-                    name="end"
-                    type="datetime"
-                    placeholder="DD/MM/AAAA, --:--"
-                    lang="pt-BR"
-                  />
-                </div>
-              </div>
-
-              <div class="flex">
-                <div class="input-wrapper">
-                  <label for="type">Tipo</label>
-                  <input
-                    id="type"
-                    name="type"
+                    id="nameEvent"
+                    name="nameEvent"
                     type="text"
-                    placeholder="Presencial Online"
+                    placeholder="Nome do evento"
                   />
                 </div>
 
-                <div class="input-wrapper">
-                  <label for="location">Local</label>
-                  <input
-                    id="location"
-                    name="location"
-                    type="url"
-                    placeholder="Link ou endereço"
-                  />
-                </div>
-              </div>
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="start">Início</label>
+                    <input
+                      id="start"
+                      name="start"
+                      type="datetime"
+                      placeholder="DD/MM/AAAA, --:--"
+                      lang="pt-BR"
+                    />
+                  </div>
 
-              <div class="textarea-wrapper">
-                <label for="description">Descrição</label>
-                <textarea
-                  id="description"
-                  name="description"
-                  placeholder="Escreva sobre os detalhes do evento"
-                ></textarea>
-              </div>
-            </fieldset>
-          </form>
+                  <div class="input-wrapper">
+                    <label for="end">Fim</label>
+                    <input
+                      id="end"
+                      name="end"
+                      type="datetime"
+                      placeholder="DD/MM/AAAA, --:--"
+                      lang="pt-BR"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="type">Tipo</label>
+                    <input
+                      id="type"
+                      name="type"
+                      type="text"
+                      placeholder="Presencial Online"
+                    />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="location">Local</label>
+                    <input
+                      id="location"
+                      name="location"
+                      type="url"
+                      placeholder="Link ou endereço"
+                    />
+                  </div>
+                </div>
+
+                <div class="textarea-wrapper">
+                  <label for="description">Descrição</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Escreva sobre os detalhes do evento"
+                  ></textarea>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+
+          <section class="theme-colors flex">
+            <form action="">
+              <fieldset>
+                <div class="legend">
+                  <img src="assets/icons/paintbrush-vertical.svg" alt="" />
+                  <strong>Personalização</strong>
+                </div>
+
+                <strong>Cor principal</strong>
+
+                <div class="colors-section">
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                  <input type="button" value="" />
+                </div>
+
+                <strong>Tema do evento</strong>
+
+                <div class="theme">
+                  <div class="card-theme selected">
+                    <img
+                      src="assets/images/Image-01.svg"
+                      alt="Imagem de tema de aniversário"
+                    />
+                    <p>Aniversário</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-02.svg"
+                      alt="Imagem de tema infantil"
+                    />
+                    <p>Infantil</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-03.svg"
+                      alt="Imagem de tema de Formatura"
+                    />
+                    <p>Formatura</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-04.svg"
+                      alt="Imagem de tema de Casamento"
+                    />
+                    <p>Casamento</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-05.svg"
+                      alt="Imagem de tema de Chá de bebê"
+                    />
+                    <p>Chá de bebê</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-06.svg"
+                      alt="Imagem de tema de Chá de panela"
+                    />
+                    <p>Chá de panela</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-07.svg"
+                      alt="Imagem de tema de Carnaval"
+                    />
+                    <p>Carnaval</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-08.svg"
+                      alt="Imagem de tema da Páscoa"
+                    />
+                    <p>Páscoa</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-09.svg"
+                      alt="Imagem de tema de São João"
+                    />
+                    <p>São João</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-10.svg"
+                      alt="Imagem de tema Halloween"
+                    />
+                    <p>Halloween</p>
+                  </div>
+                  <div class="card-theme">
+                    <img
+                      src="assets/images/Image-11.svg"
+                      alt="Imagem de tema de Natal"
+                    />
+                    <p>Natal</p>
+                  </div>
+                  <div class="card-theme">
+                    <img src="assets/images/Image-12.svg" alt="" />
+                    <p>Outro</p>
+                  </div>
+                </div>
+
+                <div class="footer-wrapper">
+                  <div class="switch-toggle">
+                    <label for="">Estilo</label>
+                    <div>
+                      <img src="assets/icons/Toggle-dark.svg" alt="" />
+                      <span>Escuro</span>
+                    </div>
+                  </div>
+
+                  <div class="input-file">
+                    <label for="file">Foto de capa</label>
+                    <div>
+                      <img src="assets/icons/upload.svg" alt="" />
+                      <input type="file" name="file" id="file" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </section>
         </div>
       </main>
     </div>

@@ -15,10 +15,6 @@ textarea {
   background: var(--input-base);
 }
 
-input[type="text"] {
-  resize: vertical;
-}
-
 textarea {
   height: 8.5rem;
 
