@@ -168,31 +168,24 @@ fieldset + fieldset {
 }
 
 .contact {
-  .input-wrapper {
-    & input[type="text"] {
-      border: none;
+  .input-wrapper input {
+    &:invalid {
       border: 1px solid var(--danger);
     }
 
-    & .required {
+    &[required] + .error {
       display: flex;
-      flex-direction: row;
       align-items: center;
-      gap: 0.5rem;
-
+      gap: .5rem;
+      
       font: var(--text-body-xs);
       color: var(--danger);
 
-      margin-top: 0.5rem;
+      margin-top: .5rem;
+    }
 
-      & svg {
-        width: 1rem;
-        height: 1rem;
-
-        path {
-          fill: var(--danger);
-        }
-      }
+    &:valid + .error {
+      display: none;
     }
   }
 }
