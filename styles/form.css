@@ -131,6 +131,8 @@ fieldset + fieldset {
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    margin-top: 1rem;
+
     /* align-items: center; */
     > div {
       display: flex;
@@ -143,6 +145,70 @@ fieldset + fieldset {
         display: flex;
         align-items: center;
         gap: 0.75rem;
+      }
+    }
+
+    & .file-zone {
+      & input[type="file"] {
+        all: unset;
+        cursor: pointer;
+
+        position: relative;
+        
+        &::file-selector-button {
+          width: 120px;
+          color: transparent;
+        }
+
+        &::before {
+          position: absolute;
+          pointer-events: none;
+          top: 10px;
+          left: 10px;
+          height: 20px;
+          width: 20px;
+          content: "";
+          background-image: url(../assets/icons/upload.svg);
+          background-repeat: no-repeat;
+        }
+
+        &::after {
+          position: absolute;
+          pointer-events: none;
+
+          height: 20px;
+          top: 10px;
+          left: 35px;
+
+          color: var(--text-heading);
+          font: var(--text-body-sm);
+          
+          content: "Selecionar";
+        }
+
+        &::file-selector-button {
+          padding: 0 16px;
+          height: 40px;
+          cursor: pointer;
+
+          border: none;
+          border-radius: .5rem;
+
+          margin-right: 16px;
+          
+          background: var(--shape-button);
+          transition: background-color 200ms;
+        }
+        
+        /* file upload button hover state */
+        &::file-selector-button:hover {
+          background-color: #f3f4f6;
+        }
+        
+        /* file upload button active state */
+        &::file-selector-button:active {
+          background-color: #e5e7eb;
+        }
       }
     }
   }
