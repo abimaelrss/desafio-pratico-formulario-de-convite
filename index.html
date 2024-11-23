@@ -46,6 +46,7 @@
                     name="nameEvent"
                     type="text"
                     placeholder="Nome do evento"
+                    required
                   />
                 </div>
 
@@ -100,8 +101,16 @@
                   <textarea
                     id="description"
                     name="description"
+                    required
                     placeholder="Escreva sobre os detalhes do evento"
                   ></textarea>
+                  <div class="error">
+                    <img
+                      src="assets/icons/circle-alert.svg"
+                      alt="Ícone de alerta"
+                    />
+                    <span>Campo obrigatório</span>
+                  </div>
                 </div>
               </fieldset>
             </form>
@@ -228,7 +237,14 @@
 
                   <div class="file-zone">
                     <label for="file">Foto de capa</label>
-                    <input type="file" name="file" id="file" />
+                    <input type="file" name="file" id="file" required />
+                    <div class="error">
+                      <img
+                        src="assets/icons/circle-alert.svg"
+                        alt="Ícone de alerta"
+                      />
+                      <span>Error message</span>
+                    </div>
                   </div>
                 </div>
               </fieldset>

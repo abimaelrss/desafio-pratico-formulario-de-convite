@@ -30,6 +30,27 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
+.about-event .textarea-wrapper textarea {
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font: var(--text-body-xs);
+    color: var(--danger);
+
+    margin-top: 0.5rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+}
+
 .colors-section {
   display: flex;
   justify-content: space-between;
@@ -81,8 +102,8 @@ fieldset + fieldset {
   }
 
   & input {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 
     border-radius: 50%;
     border: 0.375rem solid var(--shape-button);
@@ -116,6 +137,8 @@ fieldset + fieldset {
       border-radius: 0.5rem;
       border: 1px solid var(--input-stroke);
       background: var(--shape-button);
+
+      transition: background-color 200ms;
 
       &:hover {
         background-color: var(--shape-hover);
@@ -154,7 +177,7 @@ fieldset + fieldset {
         cursor: pointer;
 
         position: relative;
-        
+
         &::file-selector-button {
           width: 120px;
           color: transparent;
@@ -165,9 +188,12 @@ fieldset + fieldset {
           pointer-events: none;
           top: 10px;
           left: 10px;
-          height: 20px;
+          
           width: 20px;
+          height: 20px;
+
           content: "";
+          
           background-image: url(../assets/icons/upload.svg);
           background-repeat: no-repeat;
         }
@@ -182,7 +208,7 @@ fieldset + fieldset {
 
           color: var(--text-heading);
           font: var(--text-body-sm);
-          
+
           content: "Selecionar";
         }
 
@@ -192,22 +218,31 @@ fieldset + fieldset {
           cursor: pointer;
 
           border: none;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
 
           margin-right: 16px;
-          
+
           background: var(--shape-button);
           transition: background-color 200ms;
         }
-        
-        /* file upload button hover state */
+
         &::file-selector-button:hover {
-          background-color: #f3f4f6;
+          background-color: var(--shape-hover);
         }
-        
-        /* file upload button active state */
-        &::file-selector-button:active {
-          background-color: #e5e7eb;
+    
+        &[required] + .error {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+    
+          font: var(--text-body-xs);
+          color: var(--danger);
+    
+          /* margin-top: 0.75rem; */
+        }
+    
+        &:valid + .error {
+          display: none;
         }
       }
     }
@@ -295,6 +330,8 @@ footer {
       align-items: center;
       gap: 12px;
 
+      cursor: pointer;
+
       border: none;
       border-radius: 8px;
 
@@ -302,8 +339,10 @@ footer {
       color: var(--text-heading);
       background: var(--brand-dark);
 
+      transition: background-color 200ms;
+
       &:hover {
-        background: var(--brand-mid);
+        background-color: var(--brand-mid);
       }
     }
   }
