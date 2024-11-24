@@ -236,7 +236,7 @@ fieldset + fieldset {
         right: 0;
         bottom: 0;
 
-        background-image: url(/assets/icons/slider-default.svg);
+        background-image: url(../assets/icons/slider-default.svg);
         background-repeat: no-repeat;
       }
 
@@ -245,7 +245,7 @@ fieldset + fieldset {
       }
 
       input:checked + .slider {
-        background-image: url(/assets/icons/slider-active.svg);
+        background-image: url(../assets/icons/slider-active.svg);
         background-repeat: no-repeat;
       }
 
